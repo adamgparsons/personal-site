@@ -34,7 +34,7 @@ export function renderHero(container: HTMLElement, effect: AsciiEffect, c: HeroC
   nav.className = 'hero-nav'
 
   const emailBtn = document.createElement('a')
-  emailBtn.className = 'nav-link'
+  emailBtn.className = 'nav-link nav-link--email'
   emailBtn.href = '#'
   emailBtn.textContent = 'Email'
   emailBtn.addEventListener('click', (e) => {
