@@ -274,6 +274,7 @@ export function createCanvasEffect(): AsciiEffect {
       img.decode().then(() => {
         render()
         if (currentAnimation.enabled) startLoop()
+        requestAnimationFrame(() => canvas!.classList.add('ascii-canvas--visible'))
       })
     },
 
