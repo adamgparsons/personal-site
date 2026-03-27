@@ -97,39 +97,6 @@ html, body {
   display: block;
 }
 
-@media (max-width: 1024px) {
-  .hero-text {
-    justify-content: center;
-  }
-  .hero-h1 {
-    font-size: clamp(28px, 5vw, 48px);
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-text {
-    justify-content: flex-start;
-    padding-top: 30vh;
-  }
-  .hero-nav {
-    top: 1rem;
-  }
-}
-
-.hero-link {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-  pointer-events: auto;
-  transition: color var(--transition-speed) ease;
-}
-
-.hero-link:hover {
-  color: var(--color-text);
-}
-
 .nav-link {
   font-family: var(--font-heading);
   font-weight: 500;
@@ -145,4 +112,43 @@ html, body {
 
 .nav-link--copied {
   opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  .hero-text {
+    justify-content: center;
+  }
+  .hero-h1 {
+    font-size: clamp(28px, 5vw, 48px);
+    max-width: 100%;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    justify-content: flex-start;
+    padding-top: 30vh;
+  }
+  .hero-nav {
+    top: 1rem;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
+.hero-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  pointer-events: auto;
+  transition: color var(--transition-speed) ease;
+}
+
+.hero-link:hover {
+  color: var(--color-text);
 }
