@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --page-pad: clamp(1rem, 3vw, 3rem);
+  --color-bg: #000;
+  --color-text: #fff;
+  --color-muted: #888;
+  --font-heading: 'Geist', system-ui, -apple-system, sans-serif;
+  --transition-speed: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+#app,
+.hero-container {
+  height: 100vh;
+  height: 100dvh;
+}
+
+.hero-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.ascii-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--hero-bg-color, var(--color-bg));
+  opacity: var(--hero-bg-opacity, 1);
+}
+
+.ascii-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: var(--hero-text-position, center);
+  align-items: flex-start;
+  padding: 2rem var(--page-pad);
+  z-index: 1;
+  pointer-events: none;
+  opacity: var(--hero-text-opacity, 1);
+}
+
+.hero-nav {
+  position: absolute;
+  top: 2rem;
+  right: var(--page-pad);
+  z-index: 2;
+}
+
+.hero-h1 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(22px, 3vw, 68px);
+  line-height: 1.2;
+  max-width: 700px;
+  color: var(--hero-title-color, var(--color-text));
+}
+
+.hero-sub,
+.hero-current {
+  color: var(--color-text);
+}
+
+.hero-current {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .hero-text {
+    justify-content: center;
+  }
+  .hero-h1 {
+    font-size: clamp(28px, 5vw, 48px);
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    justify-content: flex-start;
+    padding-top: 30vh;
+  }
+  .hero-nav {
+    top: 1rem;
+  }
+}
+
+.hero-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  pointer-events: auto;
+  transition: color var(--transition-speed) ease;
+}
+
+.hero-link:hover {
+  color: var(--color-text);
+}
+
+.nav-link {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(14px, 1.2vw, 22px);
+  color: var(--color-muted);
+  text-decoration: none;
+  transition: opacity var(--transition-speed) ease;
+}
+
+.nav-link:hover {
+  opacity: 0.6;
+}
+
+.nav-link--copied {
+  opacity: 0.5;
+}
