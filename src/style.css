@@ -52,7 +52,7 @@ html, body {
   height: 100%;
   display: block;
   opacity: 0;
-  transition: opacity 3s ease;
+  transition: opacity 3s ease-in-out;
 }
 
 .ascii-canvas--visible {
