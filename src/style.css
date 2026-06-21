@@ -81,8 +81,6 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 96px var(--space-6);
 }
 
@@ -93,6 +91,15 @@ body {
 main {
   width: 100%;
   max-width: var(--content-width);
+  /* Centres when there's room, but flows from the top and scrolls when the
+     content is taller than the viewport (avoids align-items:center clipping). */
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 56px var(--space-5);
+  }
 }
 
 /* Hero */
