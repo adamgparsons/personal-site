@@ -1,30 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adam Parsons — Design Engineer</title>
-  <meta name="description" content="Design Engineer turning ideas into interfaces with design and code." />
-  <meta property="og:title" content="Adam Parsons — Design Engineer" />
-  <meta property="og:description" content="Turning ideas into interfaces with design and code." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://adamparsons.me" />
-  <meta property="og:image" content="https://adamparsons.me/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Adam Parsons — Design Engineer" />
-  <meta name="twitter:description" content="Turning ideas into interfaces with design and code." />
-  <meta name="twitter:image" content="https://adamparsons.me/og-image.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adam Parsons — Product Engineer</title>
+  <meta name="description" content="Adam Parsons is a product engineer based in London, building the interfaces businesses rely on — currently at Nala. Background in UX research, design and front-end.">
+  <meta name="theme-color" content="#141413">
+  <link rel="canonical" href="https://adamparsons.me/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adam Parsons — Product Engineer">
+  <meta property="og:description" content="Product engineer in London building the interfaces businesses rely on — currently at Nala.">
+  <meta property="og:url" content="https://adamparsons.me/">
+  <meta property="og:image" content="https://adamparsons.me/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Adam Parsons — Product Engineer">
+  <meta name="twitter:description" content="Product engineer in London building the interfaces businesses rely on — currently at Nala.">
+  <meta name="twitter:image" content="https://adamparsons.me/og-image.png">
+
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="preload" href="/fonts/Geist-Medium.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="/images/hero.webp" as="image" type="image/webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="app"></div>
+  <main>
+
+    <!-- Hero -->
+    <p class="hero-lead">I'm Adam Parsons, a product engineer based in London. Right now I'm building the interfaces our business customers use at <a href="https://nala.money">Nala</a>.</p>
+    <p class="hero-body">With a background in UX research/design and front-end development, I like to be hands-on throughout the product process.</p>
+    <p class="hero-body">In my own time, I make small things for myself, mostly creative coding and tiny games.</p>
+
+    <!-- Work -->
+    <h2 class="section-heading">Work</h2>
+    <div class="work-list">
+
+      <a href="https://nala.money" class="work-row">
+        <div class="work-row-left">
+          <div class="logo-slot"><img src="/assets/nala.png" alt="Nala"></div>
+          <div class="work-info">
+            <span class="work-title">Lead Web Engineer</span>
+            <span class="work-company">Nala</span>
+          </div>
+        </div>
+        <span class="work-date">2023 — Now</span>
+      </a>
+
+      <a href="https://wayhome.co.uk" class="work-row">
+        <div class="work-row-left">
+          <div class="logo-slot"><img src="/assets/wayhome.png" alt="Wayhome"></div>
+          <div class="work-info">
+            <span class="work-title">Frontend Developer</span>
+            <span class="work-company">Wayhome</span>
+          </div>
+        </div>
+        <span class="work-date">2021 — 2022</span>
+      </a>
+
+      <a href="https://necsws.com/digitalstudio/snook-moved-home/" class="work-row">
+        <div class="work-row-left">
+          <div class="logo-slot"><img src="/assets/snook.png" alt="Snook"></div>
+          <div class="work-info">
+            <span class="work-title">Frontend Developer</span>
+            <span class="work-company">Snook</span>
+          </div>
+        </div>
+        <span class="work-date">2019 — 2021</span>
+      </a>
+
+      <a href="https://www.citizensadvice.org.uk" class="work-row">
+        <div class="work-row-left">
+          <div class="logo-slot"><img src="/assets/citizens-advice.png" alt="Citizens Advice"></div>
+          <div class="work-info">
+            <span class="work-title">UX Designer</span>
+            <span class="work-company">Citizens Advice</span>
+          </div>
+        </div>
+        <span class="work-date">2017 — 2019</span>
+      </a>
+
+      <a href="https://www.redcross.org.uk" class="work-row">
+        <div class="work-row-left">
+          <div class="logo-slot"><img src="/assets/red-cross.png" alt="British Red Cross"></div>
+          <div class="work-info">
+            <span class="work-title">UX Designer</span>
+            <span class="work-company">British Red Cross</span>
+          </div>
+        </div>
+        <span class="work-date">2016 — 2017</span>
+      </a>
+
+    </div>
+
+    <!-- Elsewhere -->
+    <h2 class="section-heading">Elsewhere</h2>
+    <p class="elsewhere-links">
+      <a href="#" class="email-link" role="button">Email</a>
+      <span class="dot">·</span>
+      <a href="https://github.com/adamgparsons">GitHub</a>
+    </p>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Adam Parsons</p>
+    </footer>
+
+  </main>
+
   <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
